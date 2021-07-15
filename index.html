@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title id="title">survey-form form</title>
+        <title>survey form</title>
     </head>
     <body>
         <style>
             #title{
-                font: size h 1px;
+                
             }
             #description{
 
@@ -14,12 +14,13 @@
             #survey-form{
 
             }
-            #name{
+            #name-label{
 
             }
-            #email{
+            #email-label{
 
             }
+            #number-label
             body{
                 text-align:center;
                 background-color: aqua;
@@ -30,10 +31,10 @@
                 top: -15px;
             }
         </style>
-        <h1>Survey Form</h1><hr><br>
+        <h1 id="title">Survey Form</h1><hr><br>
         <form id="survey-form">
-        
-            <label id="name">First name:</label>
+            <p id="description">we love to know your experience</p>
+            <label id="name-label">First name:</label>
             <input type="text" placeholder="enter your firstname" name="Firstname" size="15">
             <label> Last name:</label>
             <input type="text" name="Lastname" placeholder="enter your lastname" size="15"><br><br>
@@ -51,9 +52,9 @@
                 <option value=" BCA">BCA</option>
                 <option value="B.com">B.com</option>
                 </select><br><br>
-            <label id="number">Phone no.:</label>
+            <label id="number-label">Phone no.:</label>
             <input type="text" placeholder="enter your mobile number" name="phonenumber" pattern="[789][0-9]{9}" placeholder="enter your email" size="10"><br><br>
-            <label id="email" pattern="[^@]*@[^@]*">Email:</label>
+            <label id="email-label" pattern="[^@]*@[^@]*">Email:</label>
             <input type="email" name="email"><br><br>
            <label>password:</label>
            <input type="password" name="password" size="15"><br><br>
